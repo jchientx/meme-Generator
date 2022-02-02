@@ -1,0 +1,92 @@
+body {
+  font-family: "fantasy";
+  background-color: rgb(255, 255, 255);
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  background-color: rgb(173, 220, 235);
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(13, 122, 194);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: white;
+  position: relative;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.meme {
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 0.08rem solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  position: relative;
+}
+
+/*
+.meme img {
+  width: 100%;
+  z-index: 2;
+}
+*/
+
+.img {
+  width: 100%;
+  object-fit: fill;
+  z-index: 2;
+}
+
+#meme-window {
+  width: 500px;
+  height: 500px;
+}
+
+.meme:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.top-Text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 50px;
+  font-family: "Bungee", fantasy;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 1px #000;
+  z-index: 1;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  font-size: 50px;
+  font-family: "Bungee", fantasy;
+  text-align: center;
+  color: white;
+  /*text-shadow: 2px 2px 2px #000;*/
+  -webkit-text-stroke: 1px #000;
+  z-index: 1;
+}
